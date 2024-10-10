@@ -1,4 +1,4 @@
-import StarIcon from "@/assets/icons/star.svg";
+import StarIcon from "@/assets/iconComponents/Star";
 import CustomIcon from "@/components/Icon";
 
 const words = [

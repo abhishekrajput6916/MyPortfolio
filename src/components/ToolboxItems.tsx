@@ -16,7 +16,7 @@ const ToolboxItems = ({
   itemsWrapperClass?:string;
 }) => {
   return (
-    <div className={twMerge("flex  [mask-image:linear-gradient(to_right,transparent,black_90%,transparent)]",className)}>
+    <div className={twMerge("flex  [mask-image:linear-gradient(to_right,transparent,black_100%,transparent)]",className)}>
       <div className={twMerge("flex py-0.5 gap-6 flex-none pr-6",itemsWrapperClass)}>
         {items.map((item) => (
           <div 

@@ -1,5 +1,5 @@
 import React from "react";
-import StarIcon from "@/assets/icons/star.svg";
+import StarIcon from "@/assets/iconComponents/Star";
 import CustomIcon from "./Icon";
 import { twMerge } from "tailwind-merge";
 
@@ -13,12 +13,12 @@ const CardHeader = ({
   className?:string;
 }) => {
   return (
-    <div className={twMerge("flex flex-col",className)}>
+    <div className={twMerge("flex flex-col p-6 md:py-8 md:px-10",className)}>
       <div className="inline-flex items-center gap-2">
-        <CustomIcon icon={StarIcon} className="size-9 text-emerald-300" />
+        <StarIcon className="size-9 text-emerald-300" />
         <h3 className="font-serif text-3xl">{title}</h3>
       </div>
-      <p className="text-sm text-white/60 mt-2">{description}</p>
+      <p className="text-sm max-w-xs lg:text-base text-white/60 mt-2">{description}</p>
     </div>
   );
 };

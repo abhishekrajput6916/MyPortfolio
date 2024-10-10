@@ -3,8 +3,8 @@ import memojiImage from "@/assets/images/memoji-computer.png";
 import { IoMdArrowDown } from "react-icons/io";
 import grainImage from "@/assets/images/grain.jpg";
 import HeroOrbit from "@/components/HeroOrbit";
-import StarIcon from "@/assets/icons/star.svg";
-import SparkleIcon from "@/assets/icons/sparkle.svg";
+import StarIcon from "@/assets/iconComponents/Star";
+import SparkleIcon from "@/assets/iconComponents/Sparkle";
 import CustomIcon from "@/components/Icon";
 
 export const HeroSection = () => {
