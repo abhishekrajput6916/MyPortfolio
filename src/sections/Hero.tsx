@@ -5,11 +5,12 @@ import grainImage from "@/assets/images/grain.jpg";
 import HeroOrbit from "@/components/HeroOrbit";
 import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
+import CustomIcon from "@/components/Icon";
 
 export const HeroSection = () => {
   return (
     <div className="py-32 md:py-48 lg:py-60 relative z-0 ">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+      <div className="absolute overflow-x-clip inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
       <div
         className="absolute inset-0 -z-30 opacity-5"
         style={{
@@ -22,25 +23,25 @@ export const HeroSection = () => {
       <div className="size-[1220px] hero-ring"></div>
 
       <HeroOrbit size={800} rotation={-72}>
-        <StarIcon className="size-28 text-emerald-300" />
+        {/* <CustomIcon icon={StarIcon} className="size-28 text-emerald-300" /> */}
       </HeroOrbit>
       <HeroOrbit size={550} rotation={20}>
-        <StarIcon className="size-12 text-emerald-300" />
+        <CustomIcon icon={StarIcon} className="size-12 text-emerald-300" />
       </HeroOrbit>
       <HeroOrbit size={590} rotation={98}>
-        <StarIcon className="size-8 text-emerald-300" />
+        <CustomIcon icon={StarIcon} className="size-8 text-emerald-300" />
       </HeroOrbit>
       <HeroOrbit size={430} rotation={-14}>
-        <SparkleIcon className="size-8 text-emerald-300/20" />
+        <CustomIcon icon={SparkleIcon} className="size-8 text-emerald-300/20" />
       </HeroOrbit>
       <HeroOrbit size={440} rotation={79}>
-        <SparkleIcon className="size-5 text-emerald-300/20" />
+        <CustomIcon icon={SparkleIcon} className="size-5 text-emerald-300/20" />
       </HeroOrbit>
       <HeroOrbit size={530} rotation={178}>
-      <SparkleIcon className="size-10 text-emerald-300/20" />
+      <CustomIcon icon={SparkleIcon} className="size-10 text-emerald-300/20" />
       </HeroOrbit>
       <HeroOrbit size={710} rotation={144}>
-      <SparkleIcon className="size-14 text-emerald-300/20" />
+      <CustomIcon icon={SparkleIcon} className="size-14 text-emerald-300/20" />
       </HeroOrbit>
 
       <HeroOrbit size={720} rotation={85}>

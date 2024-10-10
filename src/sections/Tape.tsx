@@ -1,4 +1,5 @@
 import StarIcon from "@/assets/icons/star.svg";
+import CustomIcon from "@/components/Icon";
 
 const words = [
   "Performant",
@@ -26,7 +27,7 @@ export const TapeSection = () => {
                 className="inline-flex text-gray-950 gap-4 items-center"
               >
                 <span className="uppercase font-extrabold text-sm">{word}</span>
-                <StarIcon className="size-6 -rotate-6" />
+                <CustomIcon icon={StarIcon} className="size-6 -rotate-6" />
               </div>
             ))}
           </div>
