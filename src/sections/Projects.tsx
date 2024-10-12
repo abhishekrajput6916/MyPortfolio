@@ -1,3 +1,5 @@
+"use client";
+
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
@@ -8,6 +10,8 @@ import { url } from "inspector";
 import grainImage from "@/assets/images/grain.jpg";
 import { LuArrowUpRight } from "react-icons/lu";
 import Card from "@/components/Card";
+import { motion, useScroll } from "framer-motion"
+import { useEffect } from "react";
 
 const portfolioProjects = [
   {
@@ -49,8 +53,10 @@ const portfolioProjects = [
 ];
 
 export const ProjectsSection = () => {
+  const { scrollYProgress } = useScroll();
+  useEffect(()=>{console.log("scrollYProgress",scrollYProgress);},[scrollYProgress])
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="my-projects">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
@@ -64,10 +70,13 @@ export const ProjectsSection = () => {
           See how I transformed concepts into engaging digital experiences.
         </p>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project,projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 pb-0"
+              className={"px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 pb-0 sticky"}
+              style={{
+                top:`calc(64px + ${projectIndex * 40}px`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">

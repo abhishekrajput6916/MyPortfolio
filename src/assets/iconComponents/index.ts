@@ -6,6 +6,7 @@ export { default as Css3 } from "./Css3";
 export { default as Github } from "./Github";
 export { default as Html5 } from "./Html5";
 export { default as React } from "./React";
+export { default as Redux } from "./Redux";
 export { default as Sparkle } from "./Sparkle";
 export { default as SquareJs } from "./SquareJs";
 export { default as Star } from "./Star";

@@ -50,10 +50,13 @@ export const TestimonialsSection = () => {
           title="What Clients Say about Me"
           description="Don't just take my word for it . See what my clients have to say about my work."
         />
-        <div className="mt-16 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-          <div className="flex flex-none gap-8">
-            {testimonials.map((testimonial) => (
-              <Card key={testimonial.name} className="max-w-xs md:max-w-md p-6 md:p-8">
+        <div className="mt-12 lg:mt-24 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] py-4 -my-4">
+          <div className="flex flex-none gap-8 pr-8 animate-move-left [animation-duration:90s] hover:[animation-play-state:paused]">
+            {[...testimonials,...testimonials].map((testimonial,index) => (
+              <Card
+                key={index}
+                className="max-w-xs md:max-w-md p-6 md:p-8 hover:-rotate-3 transition duration-300"
+              >
                 <div className="flex gap-4 items-center ">
                   <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
                     <Image
@@ -69,7 +72,9 @@ export const TestimonialsSection = () => {
                     </div>
                   </div>
                 </div>
-                <p className="mt-4 md:mt-6 text-sm md:text-base">{testimonial.text} </p>
+                <p className="mt-4 md:mt-6 text-sm md:text-base">
+                  {testimonial.text}{" "}
+                </p>
               </Card>
             ))}
           </div>
