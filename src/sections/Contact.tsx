@@ -1,9 +1,17 @@
+"use client"
 import { ArrowUpRight } from "@/assets/iconComponents";
 import grainImage from "@/assets/images/grain.jpg";
+import ContactForm from "@/components/ContactForm";
 
-export const ContactSection = () => {
+export const ContactSection = ({showForm,toggleShowForm}:{
+  showForm:boolean;
+  toggleShowForm:Function;
+}) => {
   return (
     <div className="py-16 pt-12 lg:py-24 lg:pt-20" id="contact">
+      {showForm && <div className="fixed inset-0 backdrop-blur-md bg-slate-300/20 z-30">
+      <ContactForm showForm={showForm} toggleShowForm={()=>toggleShowForm()}/>
+      </div>}
       <div className="container">
         <div className="bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-900 py-8 px-10  rounded-3xl text-center md:text-left relative overflow-hidden z-0">
           <div
@@ -20,10 +28,10 @@ export const ContactSection = () => {
                 discuss how I can help you achive your goals.
               </p>
             </div>
-            <div className="">
-              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border-gray-950 border">
+            <div className="group">
+              <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border-gray-950 border" onClick={()=>toggleShowForm()}>
                 <span className="font-semibold "> Contact Me</span>
-                <ArrowUpRight className="size-4" />
+                <ArrowUpRight className="size-4 rotate-45 group-hover:rotate-0 transition duration-300" />
               </button>
             </div>
           </div>

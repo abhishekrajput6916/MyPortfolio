@@ -1,6 +1,7 @@
 "use client";
 
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
+import spotifyClone from "@/assets/images/spotifyClone.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
@@ -23,8 +24,8 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://abhimusic.vercel.app/",
+    image: spotifyClone,
   },
   {
     company: "Innovative Co",
@@ -35,8 +36,8 @@ const portfolioProjects = [
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://abhimusic.vercel.app/",
+    image: spotifyClone,
   },
   {
     company: "Quantum Dynamics",
@@ -47,14 +48,14 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://abhimusic.vercel.app/",
     image: aiStartupLandingPage,
   },
 ];
 
 export const ProjectsSection = () => {
   const { scrollYProgress } = useScroll();
-  useEffect(()=>{console.log("scrollYProgress",scrollYProgress);},[scrollYProgress])
+  useEffect(()=>{console.log("scrollYProgress",scrollYProgress);},[scrollYProgress]) 
   return (
     <section className="pb-16 lg:py-24" id="my-projects">
       <div className="container">
@@ -101,7 +102,7 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
+                  <a href={project.link} target="_blank">
                     <button className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto md:px-6">
                       <span className="text-black">Visit Live Site</span>
 
@@ -113,7 +114,7 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className="mt-8 -mb-4 md:-mb-0 rounded-t-xl lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
                 </div>
               </div>
