@@ -2,8 +2,9 @@
 
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import spotifyClone from "@/assets/images/spotifyClone.png";
+import baoiamLanding from "@/assets/images/baoiamLanding.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import divueensCosmetics from "@/assets/images/divueensCosmetics.png";
 import Image from "next/image";
 import { BiCheckCircle } from "react-icons/bi";
 import { RiArrowRightUpFill } from "react-icons/ri";
@@ -16,9 +17,9 @@ import { useEffect } from "react";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Personal Project",
+    year: "2024",
+    title: "Spotify like music app",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
@@ -28,28 +29,28 @@ const portfolioProjects = [
     image: spotifyClone,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Baoiam Innovations Pvt Ltd",
+    year: "2024",
+    title: "Baoiam EdTech Website",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
       { title: "Increased brand awareness by 15%" },
     ],
-    link: "https://abhimusic.vercel.app/",
-    image: spotifyClone,
+    link: "https://baoiam-undertesting.vercel.app/",
+    image: baoiamLanding,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Baoiam Innovations Pvt Ltd",
+    year: "2024",
+    title: "Divueens Cosmetics",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://abhimusic.vercel.app/",
-    image: aiStartupLandingPage,
+    link: "https://divueens-frontend.vercel.app/",
+    image: divueensCosmetics,
   },
 ];
 
