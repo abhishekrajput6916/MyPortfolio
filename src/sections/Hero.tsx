@@ -164,7 +164,7 @@ export const HeroSection = () => {
             Frontend Developer
           </p>
           <p className="mt-4 text-center md:text-lg text-white/60">
-            Welcome to my portfolio! I'm a dedicated developer who loves
+            Welcome to my portfolio! I&apos;m a dedicated developer who loves
             crafting interactive and engaging digital experiences. Take a look
             around to explore my work, projects, and creative journey.
           </p>
