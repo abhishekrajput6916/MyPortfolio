@@ -19,7 +19,7 @@ export default function Home() {
       <HeroSection />
       <ProjectsSection />
       <TapeSection/>
-      <TestimonialsSection/>
+      {/* <TestimonialsSection/> */}
       <AboutSection/>
       <GithubGraph/>
       <ContactSection showForm={showForm} toggleShowForm={()=>setShowForm(old=>!old)} />
