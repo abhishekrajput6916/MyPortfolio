@@ -14,6 +14,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 import Card from "@/components/Card";
 import { motion, useScroll } from "framer-motion"
 import { useEffect } from "react";
+import Link from "next/link";
 
 const portfolioProjects = [
   {
@@ -111,13 +112,13 @@ export const ProjectsSection = () => {
                     </button>
                   </a>
                 </div>
-                <div className="relative ">
+                <Link href={project.link} target="_blank" className="relative cursor-pointer">
                   <Image
                     src={project.image}
                     alt={project.title}
                     className="mt-8 -mb-4 md:-mb-0 rounded-t-xl lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
                   />
-                </div>
+                </Link>
               </div>
             </Card>
           ))}
