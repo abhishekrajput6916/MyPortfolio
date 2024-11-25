@@ -8,6 +8,7 @@ import HTMLIcon from "@/assets/iconComponents/Html5";
 import CssIcon from "@/assets/iconComponents/Css3";
 // Remove or comment out the problematic import
 import bookImage from "@/assets/images/book-cover.png";
+import StealLikeAnArtistBook from "@/assets/images/StealLikeAnArtistBook.jpg";
 import ReactIcon from "@/assets/iconComponents/React";
 import ChromeIcon from "@/assets/iconComponents/Chrome";
 import GithubIcon from "@/assets/iconComponents/Github";
@@ -51,8 +52,8 @@ const toolboxItems = [
 ];
 const hobbies = [
   {
-    title: "Painting",
-    emoji: "🎨",
+    title: "Sketching",
+    emoji: "✏️",
     left: "5%",
     top: "5%",
   },
@@ -68,28 +69,34 @@ const hobbies = [
     left: "35%",
     top: "40%",
   },
-  {
-    title: "Gaming",
-    emoji: "🎮",
-    left: "10%",
-    top: "35%",
-  },
+  // {
+  //   title: "Gaming",
+  //   emoji: "🎮",
+  //   left: "10%",
+  //   top: "35%",
+  // },
   {
     title: "Music",
     emoji: "🎵",
     left: "70%",
     top: "45%",
   },
-  {
-    title: "Fitness",
-    emoji: "🏋️",
-    left: "5%",
-    top: "65%",
-  },
+  // {
+  //   title: "Fitness",
+  //   emoji: "🏋️",
+  //   left: "5%",
+  //   top: "65%",
+  // },
   {
     title: "Reading",
     emoji: "📚",
     left: "45%",
+    top: "70%", 
+  },
+  {
+    title: "DIY",
+    emoji: "🪚",
+    left: "5%",
     top: "70%", 
   },
 ];
@@ -113,7 +120,7 @@ export const AboutSection = () => {
                 description="Explore the books shaping my perspectives."
               />
               <div className="w-40 mx-auto mt-2 md:mt-0">
-                <Image src={bookImage} alt="Book cover" />
+                <Image src={StealLikeAnArtistBook} alt="Book cover" />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
