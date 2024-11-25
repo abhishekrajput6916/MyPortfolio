@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 const activeLinkStyle=" bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900" 
 
-export const Header = () => {
+export const Header = () => { 
   const [activeTab,setActiveTab]=useState('home');
   const handleTabChange= (tab:string)=>{
     setActiveTab(tab);

@@ -12,7 +12,7 @@ const SectionHeader = ({
   return (
     <>
         <div className="flex justify-center overflow-x-clip">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
+          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-purple-400 text-transparent bg-clip-text text-center">
            {eyebrow}
           </p>
         </div>

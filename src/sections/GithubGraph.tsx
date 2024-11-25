@@ -4,7 +4,7 @@ import React from "react";
 
 const GithubGraph = () => {
   return (
-    <div className='pb-16 lg:py-24"'>
+    <div className='pb-16 lg:py-24"'> 
       <div className="container ">
         <SectionHeader
           title="GitHub Contribution Highlights"

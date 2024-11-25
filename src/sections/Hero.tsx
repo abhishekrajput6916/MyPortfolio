@@ -7,7 +7,7 @@ import HeroOrbit from "@/components/HeroOrbit";
 import StarIcon from "@/assets/iconComponents/Star";
 import SparkleIcon from "@/assets/iconComponents/Sparkle";
 import CustomIcon from "@/components/Icon";
-import Link from "next/link";
+import Link from "next/link"; 
 
 export const HeroSection = () => {
   return (
@@ -35,7 +35,7 @@ export const HeroSection = () => {
         >
           <CustomIcon
             icon={SparkleIcon}
-            className="size-8 text-emerald-300/20"
+            className="size-8 text-teal-300/20"
           />
         </HeroOrbit>
         <HeroOrbit
@@ -49,7 +49,7 @@ export const HeroSection = () => {
         >
           <CustomIcon
             icon={SparkleIcon}
-            className="size-5 text-emerald-300/20"
+            className="size-5 text-teal-300/20"
           />
         </HeroOrbit>
         <HeroOrbit
@@ -59,7 +59,7 @@ export const HeroSection = () => {
           shouldOrbit
           rotation={-41}
         >
-          <div className="size-2 rounded-full bg-emerald-300/20"></div>
+          <div className="size-2 rounded-full bg-teal-300/20"></div>
         </HeroOrbit>
         <HeroOrbit
           animation="animate-spin"
@@ -72,7 +72,7 @@ export const HeroSection = () => {
         >
           <CustomIcon
             icon={SparkleIcon}
-            className="size-10 text-emerald-300/20"
+            className="size-10 text-teal-300/20"
           />
         </HeroOrbit>
         <HeroOrbit
@@ -84,7 +84,7 @@ export const HeroSection = () => {
           shouldOrbit
           rotation={20}
         >
-          <CustomIcon icon={StarIcon} className="size-12 text-emerald-300" />
+          <CustomIcon icon={StarIcon} className="size-12 text-teal-300" />
         </HeroOrbit>
         <HeroOrbit
           animation="animate-spin"
@@ -95,7 +95,7 @@ export const HeroSection = () => {
           shouldOrbit
           rotation={98}
         >
-          <CustomIcon icon={StarIcon} className="size-8 text-emerald-300" />
+          <CustomIcon icon={StarIcon} className="size-8 text-teal-300" />
         </HeroOrbit>
         <HeroOrbit
           animation="animate-spin"
@@ -104,7 +104,7 @@ export const HeroSection = () => {
           shouldOrbit
           rotation={-5}
         >
-          <div className="size-2 rounded-full  bg-emerald-300/20"></div>
+          <div className="size-2 rounded-full  bg-teal-300/20"></div>
         </HeroOrbit>
         <HeroOrbit
           animation="animate-spin"
@@ -117,7 +117,7 @@ export const HeroSection = () => {
         >
           <CustomIcon
             icon={SparkleIcon}
-            className="size-14 text-emerald-300/20"
+            className="size-14 text-teal-300/20"
           />
         </HeroOrbit>
         <HeroOrbit
@@ -127,7 +127,7 @@ export const HeroSection = () => {
           shouldOrbit
           rotation={85}
         >
-          <div className="size-3 rounded-full bg-emerald-300/20"></div>
+          <div className="size-3 rounded-full bg-teal-300/20"></div>
         </HeroOrbit>
         <HeroOrbit
           animation="animate-spin"
@@ -138,7 +138,7 @@ export const HeroSection = () => {
           shouldOrbit
           rotation={-72}
         >
-          <CustomIcon icon={StarIcon} className="size-28 text-emerald-300" />
+          <CustomIcon icon={StarIcon} className="size-28 text-teal-300" />
         </HeroOrbit>
       </div>
 
@@ -160,7 +160,7 @@ export const HeroSection = () => {
           <h1 className="font-serif md:text-nowrap text-3xl md:text-5xl text-center mt-8 tracking-wide">
             Hi, I&apos;m Abhishek Rajput
           </h1>
-          <p className="uppercase md:text-lg font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
+          <p className="uppercase md:text-lg font-semibold tracking-widest bg-gradient-to-r from-teal-300 to-purple-400 text-transparent bg-clip-text text-center">
             Frontend Developer
           </p>
           <p className="mt-4 text-center md:text-lg text-white/60">
@@ -186,7 +186,7 @@ export const HeroSection = () => {
             size={130}
               className="rounded-full  transition duration-500"
             >
-              <div className="size-2 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20"></div>
+              <div className="size-2 rounded-full bg-gradient-to-r from-teal-300 to-purple-400 -z-20"></div>
             </HeroOrbit>
             <HeroOrbit
               orbitDuration="3s"
@@ -196,11 +196,11 @@ export const HeroSection = () => {
             size={80}
               className="transition  rounded-full duration-500"
             >
-              <div className="size-4 rounded-full  bg-gradient-to-r from-emerald-300 to-sky-400 -z-20"></div>
+              <div className="size-4 rounded-full  bg-gradient-to-r from-teal-300 to-purple-400 -z-20"></div>
             </HeroOrbit>
             </div> */}
             <Link href="https://www.linkedin.com/in/fsd-abhiii/" target="_blank">
-            <button className="inline-flex relative items-center gap-2 group-hover:shadow-md transition group-hover:shadow-sky-400  border z-10 border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
+            <button className="inline-flex relative items-center gap-2 group-hover:shadow-md transition group-hover:shadow-purple-400  border z-10 border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
               <span className="text-2xl">👋</span>
               <span className="font-semibold">Let&apos;s Connect</span>
             </button>

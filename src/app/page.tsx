@@ -1,4 +1,5 @@
 "use client"
+import { useState } from "react";
 import { AboutSection } from "@/sections/About";
 import { ContactSection } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
@@ -8,13 +9,12 @@ import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
 import { TapeSection } from "@/sections/Tape";
 import { TestimonialsSection } from "@/sections/Testimonials";
-import { useState } from "react";
 
 export default function Home() {
-  const [showForm,setShowForm]=useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   return (
-    <div className="">
+    <>
       <Header />
       <HeroSection />
       <ProjectsSection />
@@ -24,6 +24,6 @@ export default function Home() {
       <GithubGraph/>
       <ContactSection showForm={showForm} toggleShowForm={()=>setShowForm(old=>!old)} />
       <Footer />
-    </div>
+    </>
   );
 }

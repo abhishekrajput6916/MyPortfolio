@@ -16,7 +16,7 @@ constraintRef:React.RefObject<HTMLElement>;
     {hobbies.map((hobbie) => (
         <motion.div
           key={hobbie.title}
-          className="inline-flex absolute items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5"
+          className="inline-flex absolute items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-purple-400 rounded-full py-1.5"
           style={{ left: hobbie.left, top: hobbie.top }}
           drag
           dragConstraints={constraintRef}

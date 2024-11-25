@@ -3,6 +3,7 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import spotifyClone from "@/assets/images/spotifyClone.png";
 import baoiamLanding from "@/assets/images/baoiamLanding.png";
+import NSALanding from "@/assets/images/NSALanding.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import divueensCosmetics from "@/assets/images/divueensCosmetics.png";
 import Image from "next/image";
@@ -30,16 +31,16 @@ const portfolioProjects = [
     image: spotifyClone,
   },
   {
-    company: "Baoiam Innovations Pvt Ltd",
+    company: "NorthStar Acadmy",
     year: "2024",
-    title: "Baoiam EdTech Website",
+    title: "NorthStar Acadmy",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Simple yet effective design" },
+      { title: "Fully responsive layout" },
+      { title: "Focused on fundamental web development practices" },
     ],
-    link: "https://baoiam-undertesting.vercel.app/",
-    image: baoiamLanding,
+    link: "https://abhishekrajput6916.github.io/NSALandingPage/",
+    image: NSALanding,
   },
   {
     company: "Baoiam Innovations Pvt Ltd",
@@ -53,16 +54,40 @@ const portfolioProjects = [
     link: "https://divueens-frontend.vercel.app/",
     image: divueensCosmetics,
   },
+  {
+    company: "Baoiam Innovations Pvt Ltd",
+    year: "2024",
+    title: "Baoiam EdTech Website",
+    results: [
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 35%" },
+      { title: "Increased brand awareness by 15%" },
+    ],
+    link: "https://baoiam-undertesting.vercel.app/",
+    image: baoiamLanding,
+  },
+  // {
+  //   company: "Baoiam Innovations Pvt Ltd",
+  //   year: "2024",
+  //   title: "Divueens Cosmetics",
+  //   results: [
+  //     { title: "Enhanced user experience by 40%" },
+  //     { title: "Improved site speed by 50%" },
+  //     { title: "Increased mobile traffic by 35%" },
+  //   ],
+  //   link: "https://divueens-frontend.vercel.app/",
+  //   image: divueensCosmetics,
+  // },
 ];
 
 export const ProjectsSection = () => {
   const { scrollYProgress } = useScroll();
-  useEffect(()=>{console.log("scrollYProgress",scrollYProgress);},[scrollYProgress]) 
+  useEffect(() => { console.log("scrollYProgress", scrollYProgress); }, [scrollYProgress])
   return (
     <section className="pb-16 lg:py-24" id="my-projects">
       <div className="container">
         <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">
+          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-teal-300 to-purple-400 text-transparent bg-clip-text text-center">
             Real-world Results
           </p>
         </div>
@@ -73,17 +98,17 @@ export const ProjectsSection = () => {
           See how I transformed concepts into engaging digital experiences.
         </p>
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project,projectIndex) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
               className={"px-8 pt-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 pb-0 sticky"}
               style={{
-                top:`calc(64px + ${projectIndex * 40}px`,
+                top: `calc(64px + ${projectIndex * 40}px`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
-                  <div className="bg-gradient-to-r from-emerald-300  to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
+                  <div className="bg-gradient-to-r from-teal-300  to-purple-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
