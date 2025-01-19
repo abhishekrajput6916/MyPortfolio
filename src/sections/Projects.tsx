@@ -45,7 +45,8 @@ const portfolioProjects = [
     ],
     link: "https://abhishekrajput6916.github.io/NSALandingPage/",
     image: NSALanding,
-  },{
+  },
+  {
     company: "Energico",
     year: "2024",
     title: "Static Website",
