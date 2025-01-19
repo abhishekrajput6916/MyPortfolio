@@ -8,6 +8,7 @@ import StarIcon from "@/assets/iconComponents/Star";
 import SparkleIcon from "@/assets/iconComponents/Sparkle";
 import CustomIcon from "@/components/Icon";
 import Link from "next/link"; 
+import { HiSaveAs } from "react-icons/hi";
 
 export const HeroSection = () => {
   return (
@@ -199,12 +200,12 @@ export const HeroSection = () => {
               <div className="size-4 rounded-full  bg-gradient-to-r from-teal-300 to-purple-400 -z-20"></div>
             </HeroOrbit>
             </div> */}
-            <Link href="https://www.linkedin.com/in/fsd-abhiii/" target="_blank">
+            <a href="/Abhishek_Rajput_9691106507.pdf" download="Abhishek_Rajput_9691106507.pdf" >
             <button className="inline-flex relative items-center gap-2 group-hover:shadow-md transition group-hover:shadow-purple-400  border z-10 border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
-              <span className="text-2xl">👋</span>
-              <span className="font-semibold">Let&apos;s Connect</span>
+              <span className="text-2xl"><HiSaveAs className="text-gray-900"/></span>
+              <span className="font-semibold">Download Resume</span>
             </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

@@ -4,6 +4,10 @@ import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import spotifyClone from "@/assets/images/spotifyClone.png";
 import baoiamLanding from "@/assets/images/baoiamLanding.png";
 import NSALanding from "@/assets/images/NSALanding.png";
+
+import EnergicoWeb from "@/assets/images/EnergicoWeb.png";
+
+
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import divueensCosmetics from "@/assets/images/divueensCosmetics.png";
 import Image from "next/image";
@@ -33,7 +37,7 @@ const portfolioProjects = [
   {
     company: "NorthStar Acadmy",
     year: "2024",
-    title: "NorthStar Acadmy",
+    title: "Landing Page",
     results: [
       { title: "Simple yet effective design" },
       { title: "Fully responsive layout" },
@@ -41,6 +45,17 @@ const portfolioProjects = [
     ],
     link: "https://abhishekrajput6916.github.io/NSALandingPage/",
     image: NSALanding,
+  },{
+    company: "Energico",
+    year: "2024",
+    title: "Static Website",
+    results: [
+      { title: "Simple yet effective design" },
+      { title: "Fully responsive Tailwind CSS layout" },
+      { title: "Focused on fundamental web development practices" },
+    ],
+    link: "https://energicoweb.netlify.app/",
+    image: EnergicoWeb,
   },
   {
     company: "Baoiam Innovations Pvt Ltd",
